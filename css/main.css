@@ -1,0 +1,162 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
+      url('../fonts/Roboto-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Medium.woff2') format('woff2'),
+      url('../fonts/Roboto-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Bold.woff2') format('woff2'),
+      url('../fonts/Roboto-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  margin: 0;
+  font-family: 'Roboto', 'arialable';
+}
+
+img{
+  vertical-align: middle;
+  object-fit: cover;
+}
+
+.container{
+  width: 1380px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+.back{
+  position: absolute;
+  width: 100%;
+  background: #F3D7B7;
+}
+
+.back__img{
+  width: 100%;
+  opacity: 0.25;
+}
+
+.header__list{
+  position: relative;
+  display: flex;
+}
+
+.header__logo_link{
+  position: absolute;
+  top: 40px;
+}
+
+.header__menu{
+  position: absolute;
+  top: 45px;
+  right: 0px;
+}
+
+.menu__list{
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu__item{
+  margin-right: 40px;
+}
+.menu__item:nth-child(3){
+  margin-right: 0;
+}
+
+.menu__link{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 1px;
+  color: #333333;
+  text-decoration: none;
+}
+/* HEADER */
+
+
+/* MAIN */
+
+/* HERO */
+.hero__list{
+  position: relative;
+}
+
+.hero__item{
+  position: absolute;
+  top: 220px;
+  left: 100px;
+  width: 464px;
+}
+
+.hero__title{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 75px;
+  color: #000000;
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.hero__text{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  margin: 0;  
+  margin-bottom: 50px;
+}
+
+.hero__link{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #fff;
+  padding: 16px 24px;
+  background: #0A775F;
+  border-radius: 100px;
+  text-decoration: none;
+}
+
+.hero__img{
+  position: absolute;
+  top: 104px; 
+  right: -79px;
+}
+
+.hero__img_two{
+  position: absolute;
+  top:  25px;
+  right: 515px;
+}
