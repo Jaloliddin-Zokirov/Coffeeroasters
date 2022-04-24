@@ -203,8 +203,6 @@ img{
 
 .product__box{
   position: relative;
-  display: inline-block;
-  width: 1400px;
   background: #F8F8F2;
   padding: 50px 0;
   text-align: center;
@@ -213,7 +211,7 @@ img{
 .product__box::before{
   position: absolute;
   bottom: 180px;
-  left: -200px;
+  left: calc(50% - 895px);
   display: block;
   width: 316px;
   height: 285px;
