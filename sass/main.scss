@@ -1,3 +1,13 @@
+:root{
+  --bg-color: #F3D7B7;
+  --commit-bgc: #F8F8F2;
+  --info-bgc: #C99B67;
+  --works-bgc: #0A775F;
+  --color-black: #000000;
+  --color-there: #333333;
+  --color-fff: #FFFFFF;
+}
+
 @font-face {
   font-family: 'Roboto';
   src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
@@ -25,7 +35,7 @@
   font-display: swap;
 }
 
-*{
+*, *::before, *::after{
   box-sizing: border-box;
 }
 
@@ -56,7 +66,7 @@ img{
   background-blend-mode: overlay;
   background-repeat: no-repeat;
   background-size: 100%;
-  background-color: #F3D7B7;
+  background-color: var(--bg-color);
   padding: 40px 0;
 }
 
@@ -97,7 +107,7 @@ img{
   letter-spacing: 1px;
   text-transform: uppercase;
   text-decoration: none;
-  color: #333333;
+  color: var(--color-black);
 }
 // HEADER
 
@@ -112,7 +122,7 @@ img{
   background-blend-mode: normal, overlay;
   background-repeat: no-repeat;
   background-size: 710px 596px, 100%;
-  background-color: #F3D7B7;
+  background-color: var(--bg-color);
   background-position: calc(50% + 405px) bottom, center;
 
   &::before{
@@ -149,7 +159,7 @@ img{
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
-  background-color: #F8F8F2;
+  background-color: var(--commit-bgc);
   
   &::before{
     position: absolute;
@@ -185,7 +195,7 @@ img{
   font-size: 48px;
   line-height: 56px;
   font-variant: small-caps;
-  color: #000000;
+  color: var(--color-there);
 }
 
 .commit__text{
@@ -193,7 +203,7 @@ img{
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
-  color: #333333;
+  color: var(--color-there);
 }
 // ABOUT_COMMIT
 
@@ -224,7 +234,7 @@ img{
   background-blend-mode: overlay;
   background-repeat: no-repeat;
   background-size: 100%;
-  background-color: #C99B67;
+  background-color: var(--info-bgc);
 }
 
 .info__list{
@@ -242,7 +252,7 @@ img{
   font-size: 50px;
   line-height: 59px;
   font-variant: small-caps;
-  color: #FFFFFF;
+  color: var(--color-fff);
 }
 
 .info__text{
@@ -250,7 +260,7 @@ img{
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
-  color: #FFFFFF;
+  color: var(--color-fff);
 }
 // ABOUT_INFO
 
@@ -266,7 +276,7 @@ img{
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
-  background-color: #0A775F;
+  background-color: var(--works-bgc);
   text-align: center;
 }
 
@@ -278,7 +288,7 @@ img{
   line-height: 59px;
   text-align: center;
   font-variant: small-caps;
-  color: #FFFFFF;
+  color: var(--color-fff);
 }
 
 .works__subject_box{
@@ -336,7 +346,7 @@ img{
   background-blend-mode: normal, overlay;
   background-repeat: no-repeat;
   background-size: 710px 696px, 100%;
-  background-color: #F3D7B7;
+  background-color: var(--bg-color);
   background-position: calc(50% + 405px) bottom, center;
 
   &::before{
@@ -365,7 +375,7 @@ img{
   font-weight: 700;
   font-size: 64px;
   line-height: 75px;
-  color: #000000;
+  color: var(--color-black);
 }
 
 .hero__text{
@@ -374,21 +384,21 @@ img{
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #000000;
+  color: var(--color-black);
 }
 
 .hero__link{
   display: inline-block;
   width: 193px;
   padding: 16px 24px;
-  background: #0A775F;
+  background: var(--works-bgc);
   border-radius: 100px;
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
   text-align: center;
   letter-spacing: 1px;
-  color: #FFFFFF;
+  color: var(--color-fff);
   text-decoration: none;
 }
 // HERO
@@ -428,7 +438,7 @@ img{
 
 .product__box{
   position: relative;
-  background: #F8F8F2;
+  background: var(--commit-bgc);
   padding: 50px 0;
   background-image: url("../images/back.png");
   background-blend-mode: overlay;
@@ -458,7 +468,7 @@ img{
   line-height: 59px;
   font-variant: small-caps;
   text-align: center;
-  color: #000000;
+  color: var(--color-black);
 }
 
 .product__list{
@@ -500,7 +510,7 @@ img{
   font-size: 48px;
   line-height: 56px;
   font-variant: small-caps;
-  color: #333333;
+  color: var(--color-there);
 }
 
 .product__text{
@@ -508,7 +518,7 @@ img{
   font-weight: 400;
   font-size: 22px;
   line-height: 34px;
-  color: #333333;
+  color: var(--color-there);
 }
 // PRODUCT
 
@@ -524,7 +534,7 @@ img{
   background-blend-mode: overlay; 
   background-repeat: no-repeat;
   background-size: 100%;
-  background-color: #C99B67;
+  background-color: var(--info-bgc);
   text-align: center;
 
   &::before{
@@ -556,7 +566,7 @@ img{
   font-size: 50px;
   line-height: 59px;
   font-variant: small-caps;
-  color: #FFFFFF;
+  color: var(--color-fff);
 }
 
 .choose__text{
@@ -564,7 +574,7 @@ img{
   font-weight: 400;
   font-size: 16px;
   line-height: 28px;
-  color: #FFFFFF;
+  color: var(--color-fff);
 }
 
 .choose__list{
@@ -598,14 +608,14 @@ img{
   font-size: 30px;
   line-height: 35px;
   font-variant: small-caps;
-  color: #333333;
+  color: var(--color-there);
 }
 
 .choose__desc{
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;  
-  color: #333333;
+  color: var(--color-there);
 }
 // CHOOSE
 
@@ -621,7 +631,7 @@ img{
   background-repeat: no-repeat;
   background-size: 215px 177px, 889px 2px, 100% 100%;
   background-position: calc(50% + 520px) calc(50% - 280px), calc(50% - 188px) calc(50% - 194px), center;
-  background-color: #0A775F;
+  background-color: var(--works-bgc);
   text-align: center;
 }
 
@@ -633,7 +643,7 @@ img{
   line-height: 59px;
   text-align: center;
   font-variant: small-caps;
-  color: #FFFFFF;
+  color: var(--color-fff);
 }
 
 .works__kubik-box{
@@ -647,8 +657,8 @@ img{
   width: 60px;
   height: 60px;
   margin-bottom: 20px;
-  background-color: #F8F8F2;
-  border: 4px solid #C99B67;
+  background-color: var(--commit-bgc);
+  border: 4px solid var(--info-bgc);
 }
 
 .works__list{
@@ -664,7 +674,7 @@ img{
   margin-right: 20px;
   margin-bottom: 60px;
   padding: 20px 20px 40px 20px;
-  background-color: #F8F8F2;
+  background-color: var(--commit-bgc);
   text-align: end;
   
   &:nth-child(3){
@@ -680,7 +690,7 @@ img{
   font-size: 64px;
   line-height: 75px;
   font-variant: small-caps;
-  color: #333333;
+  color: var(--color-there);
   opacity: 0.8;
 }
 
@@ -696,7 +706,7 @@ img{
   line-height: 47px;
   font-variant: small-caps;
   text-align: start;
-  color: #333333;
+  color: var(--color-there);
 }
 
 .works__text{
@@ -705,14 +715,14 @@ img{
   font-size: 18px;
   line-height: 28px;
   text-align: start;
-  color: #333333;
+  color: var(--color-there);
 }
 
 .works__link{
   display: inline-block;
   width: 193px;
   padding: 16px 24px;
-  background: #C99B67;
+  background: var(--info-bgc);
   border-radius: 100px;
   font-weight: 500;
   font-size: 16px;
@@ -720,7 +730,7 @@ img{
   text-align: center;
   letter-spacing: 1px;
   text-decoration: none;
-  color: #FFFFFF;
+  color: var(--color-fff);
 }
 // WORKS
 
@@ -730,7 +740,7 @@ img{
   background-blend-mode: overlay;
   background-repeat: no-repeat;
   background-size: 100%;
-  background-color: #F3D7B7;
+  background-color: var(--bg-color);
 }
 
 .footer__box{
@@ -763,7 +773,7 @@ img{
   letter-spacing: 1px;
   text-transform: uppercase;
   text-decoration: none;
-  color: #333333;
+  color: var(--color-there);
 }
 
 .footer__right-logo{
