@@ -1,0 +1,77 @@
+.about-commit{
+  padding: 20px 20px 80px;
+}
+
+.about-commit__box{
+  position: relative;
+  padding: 160px 64px 200px 165px;
+  background-image: url("../images/back.png");
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  background-color: $commit-bgc;
+  
+  &::before{
+    position: absolute;
+    top: 60px;
+    left: calc(50% - 905px);
+    display: block;
+    width: 402px;
+    height: 300px;
+    background-image: url("../images/left_side_leaf.png");
+    background-repeat: no-repeat;
+    background-size: 402px 300px;
+    content: "";
+  }
+}
+
+.about-content__subbox{
+  display: flex;
+}
+
+.about-commit__img{
+  margin-right: 158px;
+  z-index: 1;
+}
+
+.about-commit__list{
+  width: 626px;
+}
+
+.about-commit__title{
+  margin: 0;
+  margin-bottom: 24px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  font-variant: small-caps;
+  color: $color-there;
+}
+
+.about-commit__text{
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: $color-there;
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+  .about-commit__box{
+    background-image: url("../images/back@2x.png");
+  }
+  
+  .about-commit__box::before{
+    background-image: url("../images/left_side_leaf@2x.png");
+  }
+  
+  
+} 

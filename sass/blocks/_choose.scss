@@ -1,0 +1,112 @@
+.choose{
+  padding: 20px 20px 289px;
+}
+
+.choose__box{
+  position: relative;
+  padding: 50px 0 500px;
+  background-image: url("../images/back.png");
+  background-blend-mode: overlay; 
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: $info-bgc;
+  text-align: center;
+
+  &::before{
+    position: absolute;
+    top: 233px;
+    left: calc(50% - 750px);
+    display: block;
+    width: 140px;
+    height: 140px;
+    background-image: url("../images/choose_back.png");
+    background-repeat: no-repeat;
+    background-size: 140px;
+    background-position: calc(50%) calc(50%);
+    z-index: 1;
+    content: "";
+  }
+}
+
+.choose__info{
+  display: inline-block;
+  width: 581px;
+  text-align: center;
+}
+
+.choose__title{
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 59px;
+  font-variant: small-caps;
+  color: $color-fff;
+}
+
+.choose__text{
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: $color-fff;
+}
+
+.choose__list{
+  position: absolute;
+  bottom: -237px;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.choose__item{
+  margin-right: 20px;
+
+  &:nth-child(3){
+    margin-right: 0;
+  }
+}
+
+.choose__img{
+  margin-bottom: 28px;
+}
+
+.choose__content{
+  width: 365px;
+  text-align: start;
+} 
+
+.choose__subject{
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 35px;
+  font-variant: small-caps;
+  color: $color-there;
+}
+
+.choose__desc{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;  
+  color: $color-there;
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+  .choose__box{
+    background-image: url("../images/back@2x.png");
+  }
+
+  .choose__box::before{
+    background-image: url("../images/choose_back@2x.png");
+  }
+  
+} 

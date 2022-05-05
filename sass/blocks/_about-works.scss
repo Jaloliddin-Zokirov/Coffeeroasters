@@ -1,0 +1,120 @@
+.about-works{
+  padding: 20px 20px 50px;
+}
+
+.about-works__box{
+  padding: 50px 30px;
+  background-image: url("../images/back.png");
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  background-color: $works-bgc;
+  text-align: center;
+}
+
+.about-works__title{
+  margin: 0;
+  margin-bottom: 80px;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 59px;
+  text-align: center;
+  font-variant: small-caps;
+  color: $color-fff;
+}
+
+.about-works__list{
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.about-works__item{
+  width: 433px;
+  margin-right: 20px;
+  padding: 140px 20px 40px 20px;
+  background-color: $commit-bgc;
+  text-align: end;
+
+  &:nth-child(1n + 2){
+    width: 433px;
+    margin-right: 20px;
+    padding: 187px 20px 40px 20px;
+    background-color: $commit-bgc;
+    text-align: end;
+  }
+  
+  &:nth-child(1){
+    background-image: url("../images/works__item_one_img.svg");
+    background-repeat: no-repeat;
+    background-size: 120px 143px;
+    background-position: calc(50% + 100px) calc(50% - 95px);
+  }
+  
+  &:nth-child(2){
+    background-image: url("../images/works__item_two_img.svg");
+    background-repeat: no-repeat;
+    background-size: 120px 120px;
+    background-position: calc(50% + 100px) calc(50% - 95px);
+  }
+  
+  &:nth-child(3){
+    background-image: url("../images/works__item_there_img.svg");
+    background-repeat: no-repeat;
+    background-size: 120px 107px;
+    background-position: calc(50% + 100px) calc(50% - 95px);
+  }
+}
+
+
+.about-works__number{
+  display: inline-block;
+  margin-bottom: 45px;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 75px;
+  font-variant: small-caps;
+  color: $color-there;
+  opacity: 0.8;
+}
+
+.about-works__subject_box{
+  width: 231px;
+}
+
+.about-works__subject{
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  font-variant: small-caps;
+  text-align: start;
+  color: $color-there;
+}
+
+.about-works__text{
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: start;
+  color: $color-there;
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+  .about-works__box{
+    background-image: url("../images/back@2x.png");
+  }
+  
+} 

@@ -1,0 +1,63 @@
+.footer{
+  background-image: url("../images/back.png");
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: $bg-color;
+}
+
+.footer__box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 65px 0;
+}
+
+.menu__sublist{
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu__subitem{
+  margin-right: 40px;
+  
+  &:nth-child(3){
+    margin-right: 0;
+  }
+}
+
+
+.menu__sublink{
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $color-there;
+}
+
+.footer__right-logo{
+  margin-right: 30px;
+  text-decoration: none;
+  
+  &:nth-child(3){
+    margin-right: 0;
+  }
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+  .footer{
+    background-image: url("../images/back@2x.png");
+  }
+  
+} 

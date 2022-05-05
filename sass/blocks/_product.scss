@@ -1,0 +1,142 @@
+.product{
+  position: relative;
+  text-align: center;
+  padding: 20px;
+
+  &::before{
+    position: absolute;
+    top: 70px;
+    left: calc(50% - 850px);
+    display: block;
+    width: 402px;
+    height: 300px;
+    background-image: url("../images/left_side_leaf.png");
+    background-repeat: no-repeat;
+    z-index: 1;
+    content: "";
+  }
+
+  &::after{
+    position: absolute;
+    top: 720px;
+    right: calc(50% - 950px);
+    display: block;
+    width: 450px;
+    height: 477px;
+    background-image: url("../images/right_leaf.png"), url("../images/right_leaf_bottom.png");
+    background-position: center, calc(50% + 25px) calc(50% + 25px);
+    background-repeat: no-repeat;
+    content: "";
+  }
+}
+
+.product__box{
+  position: relative;
+  background: $commit-bgc;
+  padding: 50px 0;
+  background-image: url("../images/back.png");
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  text-align: center;
+
+  &::before{
+    position: absolute;
+    bottom: 180px;
+    left: calc(50% - 895px);
+    display: block;
+    width: 316px;
+    height: 285px;
+    background-image: url("../images/left_side_leaf_two.png");
+    background-repeat: no-repeat;
+    content: "";
+  }
+}
+
+.product__title{
+  margin: 0;
+  margin-bottom: 80px;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 59px;
+  font-variant: small-caps;
+  text-align: center;
+  color: $color-black;
+}
+
+.product__list{
+  display: inline-block;
+  width: 1114px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.product__item{
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  text-align: start;
+
+  &:nth-child(2n + 1){
+    flex-direction: row;
+  }
+}
+
+.product__img{
+  margin-right: 117px;
+}
+
+.product__img--two{
+  margin-right: 0;
+  margin-left: 117px;
+}
+
+.product__content{
+  width: 400px;
+}
+
+.product__subject{
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 56px;
+  font-variant: small-caps;
+  color: $color-there;
+}
+
+.product__text{
+  margin: 0;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 34px;
+  color: $color-there;
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+  .product::before{
+    background-image: url("../images/left_side_leaf@2x.png");
+  }
+
+  .product::after{
+    background-image: url("../images/right_leaf@2x.png"), url("../images/right_leaf_bottom@2x.png");
+  }
+
+  .product__box{
+    background-image: url("../images/back@2x.png");
+  }
+
+  .product__box::before{
+    background-image: url("../images/left_side_leaf_two@2x.png");
+  }
+  
+} 

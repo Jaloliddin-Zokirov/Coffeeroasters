@@ -1,0 +1,126 @@
+.works{
+  padding: 20px 20px 50px;
+}
+
+.works__box{
+  padding: 50px 30px;
+  background-image: url("../images/but_first.png"), url("../images/there_kubik.png"), url("../images/back.png");
+  background-blend-mode: normal, normal, overlay;
+  background-repeat: no-repeat;
+  background-size: 215px 177px, 889px 2px, 100% 100%;
+  background-position: calc(50% + 520px) calc(50% - 280px), calc(50% - 188px) calc(50% - 194px), center;
+  background-color: $works-bgc;
+  text-align: center;
+}
+
+.works__title{
+  margin: 0;
+  margin-bottom: 80px;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 59px;
+  text-align: center;
+  font-variant: small-caps;
+  color: $color-fff;
+}
+
+.works__kubik-box{
+  display: flex;
+  justify-content: space-between;
+  width: 966px;
+}
+
+.works__kubik{
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+  background-color: $commit-bgc;
+  border: 4px solid $info-bgc;
+}
+
+.works__list{
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.works__item{
+  width: 433px;
+  margin-right: 20px;
+  margin-bottom: 60px;
+  padding: 20px 20px 40px 20px;
+  background-color: $commit-bgc;
+  text-align: end;
+  
+  &:nth-child(3){
+    margin-right: 0;
+  }
+}
+
+
+.works__number{
+  display: inline-block;
+  margin-bottom: 45px;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 75px;
+  font-variant: small-caps;
+  color: $color-there;
+  opacity: 0.8;
+}
+
+.works__subject-box{
+  width: 231px;
+}
+
+.works__subject{
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  font-variant: small-caps;
+  text-align: start;
+  color: $color-there;
+}
+
+.works__text{
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: start;
+  color: $color-there;
+}
+
+.works__link{
+  display: inline-block;
+  width: 193px;
+  padding: 16px 24px;
+  background: $info-bgc;
+  border-radius: 100px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: $color-fff;
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+  .works__box{
+    background-image: url("../images/but_first@2x.png"), url("../images/there_kubik@2x.png"), url("../images/back@2x.png");
+  }
+  
+} 

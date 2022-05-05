@@ -1,0 +1,76 @@
+.hero{
+  position: relative;
+  padding: 116px 0 249px;
+  background-image: url("../images/cofe_foto.png"), url("../images/back.png");
+  background-blend-mode: normal, overlay;
+  background-repeat: no-repeat;
+  background-size: 710px 696px, 100%;
+  background-color: $bg-color;
+  background-position: calc(50% + 405px) bottom, center;
+
+  &::before{
+    position: absolute;
+    top: -80px;
+    left: calc(50% - 40px);
+    display: block;
+    width: 214px;
+    height: 214px;
+    background-image: url("../images/butfirst_coffee.svg");
+    background-repeat: no-repeat;
+    background-size: 214;
+    z-index: 1;
+    content: "";
+  }
+}
+
+.hero__list{
+  width: 464px;
+  margin-left: 100px;
+}
+
+.hero__title{
+  margin: 0;
+  margin-bottom: 24px;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 75px;
+  color: $color-black;
+}
+
+.hero__text{
+  margin: 0;
+  margin-bottom: 34px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: $color-black;
+}
+
+.hero__link{
+  display: inline-block;
+  width: 193px;
+  padding: 16px 24px;
+  background: $works-bgc;
+  border-radius: 100px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 1px;
+  color: $color-fff;
+  text-decoration: none;
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+  .hero{
+    background-image: url("../images/cofe_foto@2x.png"), url("../images/back@2x.png");
+  }
+  
+} 
