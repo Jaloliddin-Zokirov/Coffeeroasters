@@ -1,0 +1,60 @@
+.create-hero{
+  position: relative;
+  padding: 116px 0 225px;
+  background-image: url("../images/create-hero.png"), url("../images/back.png");
+  background-blend-mode: normal, overlay;
+  background-repeat: no-repeat;
+  background-size: 710px 596px, 100%;
+  background-color: $bg-color;
+  background-position: calc(50% + 405px) bottom, center;
+
+  &::before{
+    position: absolute;
+    top: -80px;
+    left: calc(50% - 40px);
+    display: block;
+    width: 214px;
+    height: 214px;
+    background-image: url("../images/butfirst_coffee.svg");
+    background-repeat: no-repeat;
+    background-size: 214;
+    z-index: 1;
+    content: "";
+  }
+}
+
+.create-hero__sublist{
+  width: 372px;
+  margin-left: 100px;
+}
+
+.create-hero__title{
+  margin: 0;
+  margin-bottom: 24px;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 75px;
+  color: $color-black;
+}
+
+.create-hero__text{
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: $color-black;
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+  .about-hero{
+    background-image: url("../images/create-hero@2x.png"), url("../images/back@2x.png");
+  }
+  
+} 

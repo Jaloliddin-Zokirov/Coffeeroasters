@@ -1,0 +1,99 @@
+.create-works{
+  padding: 20px 20px 50px;
+}
+
+.create-works__box{
+  padding: 80px 30px;
+  background-image: url("../images/there_kubik.png"), url("../images/back.png");
+  background-blend-mode: normal, overlay;
+  background-repeat: no-repeat;
+  background-size: 889px 2px, 100% 100%;
+  background-position: calc(50% - 188px) calc(50% - 205px), center;
+  background-color: $works-bgc;
+  text-align: center;
+}
+
+.create-works__kubik-box{
+  display: flex;
+  justify-content: space-between;
+  width: 966px;
+}
+
+.create-works__kubik{
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+  background-color: $commit-bgc;
+  border: 4px solid $info-bgc;
+}
+
+.create-works__list{
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.create-works__item{
+  width: 433px;
+  margin-right: 20px;
+  padding: 20px 20px 40px 20px;
+  background-color: $commit-bgc;
+  text-align: end;
+  
+  &:nth-child(3){
+    margin-right: 0;
+  }
+}
+
+
+.create-works__number{
+  display: inline-block;
+  margin-bottom: 45px;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 75px;
+  font-variant: small-caps;
+  color: $color-there;
+  opacity: 0.8;
+}
+
+.create-works__subject-box{
+  width: 231px;
+}
+
+.create-works__subject{
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  font-variant: small-caps;
+  text-align: start;
+  color: $color-there;
+}
+
+.create-works__text{
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: start;
+  color: $color-there;
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+  .works__box{
+    background-image: url("../images/there_kubik@2x.png"), url("../images/back@2x.png");
+  }
+  
+} 
