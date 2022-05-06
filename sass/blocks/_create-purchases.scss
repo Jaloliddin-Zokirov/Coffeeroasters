@@ -1,0 +1,56 @@
+.purchases{
+  position: relative;
+  padding: 20px;
+
+  &::before{
+    position: absolute;
+    top: 300px;
+    left: calc(50% + 590px);
+    display: block;
+    width: 514px;
+    height: 570px;
+    background-image: url("../../images/purchases-right-leaf.png");
+    background-repeat: no-repeat;
+    background-size: 514px 570px;
+    background-position: center;
+    z-index: 1;
+    content: "";
+  }
+
+  &::after{
+    position: absolute;
+    bottom: calc(50% - 100px);
+    right: calc(50% + 565px); 
+    display: block;
+    width: 402px;
+    height: 300px;
+    background-image: url("../../images/left_side_leaf.png");
+    background-repeat: no-repeat;
+    background-size: 402px 300px;
+    background-position: center;
+    z-index: 1;
+    content: "";
+  }
+}
+
+.purchases__box{
+  position: relative;
+  height: 2127px;
+  padding: 50px 30px;
+  background-color: $commit-bgc;
+
+  &::before{
+    position: absolute;
+    bottom: 300px;
+    right: calc(50% + 680px); 
+    display: block;
+    width: 316px;
+    height: 269px;
+    background-image: url("../../images/left_side_leaf_two.png");
+    background-repeat: no-repeat;
+    background-size: 316px 269px;
+    background-position: center;
+    z-index: 1;
+    content: "";
+  }
+}
