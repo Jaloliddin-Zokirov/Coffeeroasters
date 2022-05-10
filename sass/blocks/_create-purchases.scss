@@ -19,7 +19,7 @@
 
   &::after{
     position: absolute;
-    bottom: calc(50% - 100px);
+    top: 800px;
     right: calc(50% + 565px); 
     display: block;
     width: 402px;
@@ -35,13 +35,12 @@
 
 .purchases__box{
   position: relative;
-  height: 2127px;
-  padding: 50px 30px;
+  padding: 50px 144px 50px 30px;
   background-color: $commit-bgc;
 
   &::before{
     position: absolute;
-    bottom: 300px;
+    top: 1400px;
     right: calc(50% + 680px); 
     display: block;
     width: 316px;
@@ -55,82 +54,148 @@
   }
 }
 
-.button {
-  position: relative;
-  margin: 20px;
-  padding: 11px;
-  background: #0077B5;
-  border-radius: 4px;
-  border: none;
-  
-  &::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-top: 10px solid #0077B5;
-    border-right: 10px solid transparent;
-    border-left: 10px solid transparent;
-    transform: translateX(-50%);
-    content: "";
+.box{
+  display: flex;
+}
+
+.box__left{
+  width: 230px;
+}
+
+.list__item:checked ~ .list-item__box > .item-title{
+  color: #000000;
+  border-bottom: 3px dashed #C99B67;
+}
+
+.list-item__box{
+  display: block;
+  margin-bottom: 30px;
+  padding-bottom: 5px;
+}
+
+.item-title{
+  display: inline-block;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 33px;
+  font-variant: small-caps;
+  color: #555555;
+  border-bottom: 3px dashed transparent;
+}
+
+.box__right{
+  margin-left: auto;
+}
+
+.right-subbox{
+  width: 686px;
+  margin-bottom: 60px;
+}
+
+.box__survey{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.box-right__title{
+  margin: 0;
+  margin-right: 55px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+  font-variant: small-caps;
+  color: #000000;
+}
+
+.box-right__button, .button-two, .button-there, .button-four, .button-five{
+  border: 0;
+  background-color: transparent;
+}
+
+.box-right__list{
+  vertical-align: middle;
+}
+
+.survery-content{
+  display: none;
+
+  &__two{
+    display: none;
+  }
+  &__there{
+    display: none;
+  }
+  &__four{
+    display: none;
+  }
+  &__five{
+    display: none;
   }
 }
 
-.about__span {
-  position: absolute;
-  top: 0;
-  right: 0;
-  border-top: 10px solid #0077B5;
-  border-right: 10px solid transparent;
-  border-left: 10px solid transparent;
-  transform: translateX(50%);
+.survery-content--open{
+  display: block;
+  height: 220px;
 }
 
-.button::-webkit-scrollbar {
-  width: 8px;
+.survery-content__two--open{
+  display: block;
+  height: 220px;
 }
- 
-.button::-webkit-scrollbar-track {
-  background-image: url("../../images/scroll-bgi.jpg");
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+.survery-content__there--open{
+  display: block;
+  height: 220px;
 }
- 
-.button::-webkit-scrollbar-thumb {
-  background-color: darkcyan;
-  border-radius: 30px;
+.survery-content__four--open{
+  display: block;
+  height: 220px;
 }
-
-.box {
-  width: 660px;
-  margin-bottom: 20px;
-  padding: 20px;
+.survery-content__five--open{
+  display: block;
+  height: 220px;
 }
 
-.box__header {
-  display: flex;
-  align-items: center;
+.right-list__item:checked ~ .item-box{
+  background-color: #0A775F;
 }
 
-.box__title {
+.right-list__item:checked ~ .item-box > .item__title, .item__text{
+  color: #FFFFFF;
+}
+
+.right-list__item:checked ~ .item-box > .item__text{
+  color: #FFFFFF;
+}
+
+.item-box{
+  display: inline-block;
+  width: 208px;
+  margin-right: 18px;
+  padding: 30px 12px 80px 16px;
+  background-color: #C5DACF;
+}
+
+.item-box__one{
+  padding: 30px 32px 56px 16px;
+}
+  
+
+.item__title{
+  display: block;
   margin: 0;
-  margin-right: 55px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  font-variant: small-caps;
+  color: #333333;
 }
 
-.box__button {
-  transition: all 1s ease;
-  background-color: transparent;
-  border: none;
-}
-
-.rotate {
-  transform: rotate(180deg);
-}
-
-.box__content {
-  transition: all 1s ease;
-  height: 0;
-  overflow: hidden;
-}
-
-.box__content--open {
-  height: 200px;
+.item__text{
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #333333;
 }
