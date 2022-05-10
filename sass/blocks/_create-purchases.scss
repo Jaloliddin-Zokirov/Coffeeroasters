@@ -63,18 +63,18 @@
   width: 230px;
 }
 
-.list__item:checked ~ .list-item__box > .item-title{
+.list__item:checked ~ .list__item-box > .item__title{
   color: #000000;
   border-bottom: 3px dashed #C99B67;
 }
 
-.list-item__box{
+.list__item-box{
   display: block;
   margin-bottom: 30px;
   padding-bottom: 5px;
 }
 
-.item-title{
+.item__title{
   display: inline-block;
   font-weight: 500;
   font-size: 28px;
@@ -84,13 +84,13 @@
   border-bottom: 3px dashed transparent;
 }
 
-.box-right__bigbox{
+.box__right{
   display: flex;
   flex-direction: column;
   margin-left: auto;
 }
 
-.right-subbox{
+.box__right-subbox{
   width: 686px;
   margin-bottom: 60px;
 }
@@ -101,7 +101,7 @@
   margin-bottom: 20px;
 }
 
-.box-right__title{
+.box__right-title{
   margin: 0;
   margin-right: 55px;
   font-weight: 700;
@@ -154,24 +154,24 @@
   display: block;
   height: 220px;
 }
-.survery-content__five--open{
+.box__content-five--open{
   display: block;
   height: 220px;
 }
 
-.right-list__item:checked ~ .item-box{
+.right__list-item:checked ~ .right__item-box{
   background-color: #0A775F;
 }
 
-.right-list__item:checked ~ .item-box > .item__title, .item__text{
+.right__list-item:checked ~ .right__item-box > .item__title, .item__text{
   color: #FFFFFF;
 }
 
-.right-list__item:checked ~ .item-box > .item__text{
+.right__list-item:checked ~ .right__item-box > .item__text{
   color: #FFFFFF;
 }
 
-.item-box{
+.right__item-box{
   display: inline-block;
   width: 208px;
   margin-right: 18px;
@@ -236,7 +236,7 @@
   color: #000000;
 }
 
-.box-link__box{
+.box__link-box{
   margin-right: 27px;
   margin-left: auto;
 }
