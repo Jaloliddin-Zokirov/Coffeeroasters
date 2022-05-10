@@ -80,7 +80,7 @@
     <section class="purchases">
       <div class="purchases__box box">
         <div class="container">
-          <form class="box" >
+          <form class="box" action="https://echo.htmlacademy.ru/" method="POST">
 
             <div class="box__left">
               <label class="box-left__list">
@@ -115,169 +115,193 @@
               </label>
             </div>
 
-            <div class="box__right">
+            <div class="box-right__bigbox">
+              <div class="box__right">
 
-              <div class="right-subbox">
-                <div class="box__survey">
-                  <h3 class="box-right__title">how do you drink your coffee?</h3>
-                  <button class="box-right__button" type="button" >
-                    <svg width="19" height="11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.988.784a1.667 1.667 0 0 0-2.35 0l-5.983 5.9-5.9-5.9a1.667 1.667 0 1 0-2.35 2.367l7.066 7.066a1.667 1.667 0 0 0 2.367 0l7.15-7.066a1.667 1.667 0 0 0 0-2.367Z" fill="#333"/></svg>
-                  </button>
+                <div class="right-subbox">
+                  <div class="box__survey">
+                    <h3 class="box-right__title">how do you drink your coffee?</h3>
+                    <button class="box-right__button" type="button" >
+                      <svg width="19" height="11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.988.784a1.667 1.667 0 0 0-2.35 0l-5.983 5.9-5.9-5.9a1.667 1.667 0 1 0-2.35 2.367l7.066 7.066a1.667 1.667 0 0 0 2.367 0l7.15-7.066a1.667 1.667 0 0 0 0-2.367Z" fill="#333"/></svg>
+                    </button>
+                  </div>
+                  <div class="survery-content">
+                    <label class="box-right__list">
+                      <input class="right-list__item visually-hidden" type="radio" name="user_demand" value="capsule">
+                      <span class="item-box">
+                        <strong class="item__title">capsule</strong>
+                        <span class="item__text">compatible with Nespresso systems and similar brewers</span>
+                      </span>
+                    </label>
+                    <label class="box-right__list">
+                      <input class="right-list__item visually-hidden" type="radio" name="user_demand" value="filter">
+                      <span class="item-box item-box__one">
+                        <strong class="item__title">filter</strong>
+                        <span class="item__text">for pour over or drip methods like Aeropress, Chemex, and V60</span>
+                      </span>
+                    </label>
+                    <label class="box-right__list">
+                      <input class="right-list__item visually-hidden" type="radio" name="user_demand" value="espresso">
+                      <span class="item-box item-box__one">
+                        <strong class="item__title">espresso</strong>
+                        <span class="item__text">dense and finely ground beans for an intense, flavorful experience</span>
+                      </span>
+                    </label>
+                  </div>
                 </div>
-                <div class="survery-content">
-                  <label class="box-right__list">
-                    <input class="right-list__item visually-hidden" type="radio" name="user_demand" value="capsule">
-                    <span class="item-box">
-                      <strong class="item__title">capsule</strong>
-                      <span class="item__text">compatible with Nespresso systems and similar brewers</span>
-                    </span>
-                  </label>
-                  <label class="box-right__list">
-                    <input class="right-list__item visually-hidden" type="radio" name="user_demand" value="filter">
-                    <span class="item-box item-box__one">
-                      <strong class="item__title">filter</strong>
-                      <span class="item__text">for pour over or drip methods like Aeropress, Chemex, and V60</span>
-                    </span>
-                  </label>
-                  <label class="box-right__list">
-                    <input class="right-list__item visually-hidden" type="radio" name="user_demand" value="espresso">
-                    <span class="item-box item-box__one">
-                      <strong class="item__title">espresso</strong>
-                      <span class="item__text">dense and finely ground beans for an intense, flavorful experience</span>
-                    </span>
-                  </label>
+  
+                <div class="right-subbox">
+                  <div class="box__survey">
+                    <h3 class="box-right__title">what type of coffee?</h3>
+                    <button class="button-two" type="button" >
+                      <svg width="19" height="11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.988.784a1.667 1.667 0 0 0-2.35 0l-5.983 5.9-5.9-5.9a1.667 1.667 0 1 0-2.35 2.367l7.066 7.066a1.667 1.667 0 0 0 2.367 0l7.15-7.066a1.667 1.667 0 0 0 0-2.367Z" fill="#333"/></svg>
+                    </button>
+                  </div>
+                  <div class="survery-content__two">
+                    <label class="box-right__list">
+                      <input class="right-list__item visually-hidden" type="radio" name="user_type" value="single origin">
+                      <span class="item-box">
+                        <strong class="item__title">single origin</strong>
+                        <span class="item__text">distinct, high quality coffee from a specific family-owned farm</span>
+                      </span>
+                    </label>
+                    <label class="box-right__list">
+                      <input class="right-list__item visually-hidden" type="radio" name="user_type" value="decaf">
+                      <span class="item-box item-box__one">
+                        <strong class="item__title">decaf</strong>
+                        <span class="item__text">just like regular coffee, except the caffeine has been removed</span>
+                      </span>
+                    </label>
+                    <label class="box-right__list">
+                      <input class="right-list__item visually-hidden" type="radio" name="user_type" value="blended">
+                      <span class="item-box item-box__one">
+                        <strong class="item__title">blended</strong>
+                        <span class="item__text">combination of two or three dark roasted beans of organic coffees</span>
+                      </span>
+                    </label>
+                  </div>
                 </div>
+  
+                <div class="right-subbox">
+                  <div class="box__survey">
+                    <h3 class="box-right__title">how much would you like?</h3>
+                    <button class="button-there" type="button" >
+                      <svg width="19" height="11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.988.784a1.667 1.667 0 0 0-2.35 0l-5.983 5.9-5.9-5.9a1.667 1.667 0 1 0-2.35 2.367l7.066 7.066a1.667 1.667 0 0 0 2.367 0l7.15-7.066a1.667 1.667 0 0 0 0-2.367Z" fill="#333"/></svg>
+                    </button>
+                  </div>
+                  <div class="survery-content__there">
+                    <label class="box-right__list">
+                      <input class="right-list__item visually-hidden" type="radio" name="user_much" value="250G">
+                      <span class="item-box ">
+                        <strong class="item__title">250G</strong>
+                        <span class="item__text">Perfect for the solo drinker. Yields about 12 delicious cups.</span>
+                      </span>
+                    </label>
+                    <label class="box-right__list">
+                      <input class="right-list__item visually-hidden" type="radio" name="user_much" value="500G">
+                      <span class="item-box item-box__one">
+                        <strong class="item__title">500G</strong>
+                        <span class="item__text">Perfect option for a couple. Yields about 40 delectable cups.</span>
+                      </span>
+                    </label>
+                    <label class="box-right__list">
+                      <input class="right-list__item visually-hidden" type="radio" name="user_much" value="1000G">
+                      <span class="item-box item-box__one">
+                        <strong class="item__title">1000G</strong>
+                        <span class="item__text">Perfect for offices and events. Yields about 90 delightful cups.</span>
+                      </span>
+                    </label>
+                  </div>
+                </div>
+  
+                <div class="right-subbox">
+                  <div class="box__survey">
+                    <h3 class="box-right__title">want us to grind them?</h3>
+                    <button class="button-four" type="button" >
+                      <svg width="19" height="11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.988.784a1.667 1.667 0 0 0-2.35 0l-5.983 5.9-5.9-5.9a1.667 1.667 0 1 0-2.35 2.367l7.066 7.066a1.667 1.667 0 0 0 2.367 0l7.15-7.066a1.667 1.667 0 0 0 0-2.367Z" fill="#333"/></svg>
+                    </button>
+                  </div>
+                  <div class="survery-content__four">
+                    <label class="box-right__list">
+                      <input class="right-list__item visually-hidden" type="radio" name="user_grind" value="wholebean">
+                      <span class="item-box">
+                        <strong class="item__title">wholebean</strong>
+                        <span class="item__text">best choice if you cherish the full sensory experience</span>
+                      </span>
+                    </label>
+                    <label class="box-right__list">
+                      <input class="right-list__item visually-hidden" type="radio" name="user_grind" value="filter">
+                      <span class="item-box item-box__one">
+                        <strong class="item__title">filter</strong>
+                        <span class="item__text">for drip or pour-over coffee methods such as V60 or Aeropress</span>
+                      </span>
+                    </label>
+                    <label class="box-right__list">
+                      <input class="right-list__item visually-hidden" type="radio" name="user_grind" value="cafetiére">
+                      <span class="item-box item-box__one">
+                        <strong class="item__title">cafetiére</strong>
+                        <span class="item__text">course ground beans specially suited for french press coffee</span>
+                      </span>
+                    </label>
+                  </div>
+                </div>
+  
+                <div class="right-subbox">
+                  <div class="box__survey">
+                    <h3 class="box-right__title">how often should we deliver?</h3>
+                    <button class="button-five" type="button" >
+                      <svg width="19" height="11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.988.784a1.667 1.667 0 0 0-2.35 0l-5.983 5.9-5.9-5.9a1.667 1.667 0 1 0-2.35 2.367l7.066 7.066a1.667 1.667 0 0 0 2.367 0l7.15-7.066a1.667 1.667 0 0 0 0-2.367Z" fill="#333"/></svg>
+                    </button>
+                  </div>
+                  <div class="survery-content__five">
+                    <label class="box-right__list">
+                      <input class="right-list__item visually-hidden" type="radio" name="user_should" value="every week">
+                      <span class="item-box">
+                        <strong class="item__title">every week</strong>
+                        <span class="item__text">$7.20 per shipment. Includes free first-class shipping.</span>
+                      </span>
+                    </label>
+                    <label class="box-right__list">
+                      <input class="right-list__item visually-hidden" type="radio" name="user_should" value="every 2 weeks">
+                      <span class="item-box">
+                        <strong class="item__title">every 2 weeks</strong>
+                        <span class="item__text">$9.60 per shipment. Includes free priority shipping.</span>
+                      </span>
+                    </label>
+                    <label class="box-right__list">
+                      <input class="right-list__item visually-hidden" type="radio" name="user_should" value="every month">
+                      <span class="item-box">
+                        <strong class="item__title">every month</strong>
+                        <span class="item__text">$12.00 per shipment. Includes free priority shipping.</span>
+                      </span>
+                    </label>
+                  </div>
+                </div>
+                
               </div>
-
-              <div class="right-subbox">
-                <div class="box__survey">
-                  <h3 class="box-right__title">what type of coffee?</h3>
-                  <button class="button-two" type="button" >
-                    <svg width="19" height="11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.988.784a1.667 1.667 0 0 0-2.35 0l-5.983 5.9-5.9-5.9a1.667 1.667 0 1 0-2.35 2.367l7.066 7.066a1.667 1.667 0 0 0 2.367 0l7.15-7.066a1.667 1.667 0 0 0 0-2.367Z" fill="#333"/></svg>
-                  </button>
-                </div>
-                <div class="survery-content__two">
-                  <label class="box-right__list">
-                    <input class="right-list__item visually-hidden" type="radio" name="user_type" value="single origin">
-                    <span class="item-box">
-                      <strong class="item__title">single origin</strong>
-                      <span class="item__text">distinct, high quality coffee from a specific family-owned farm</span>
-                    </span>
-                  </label>
-                  <label class="box-right__list">
-                    <input class="right-list__item visually-hidden" type="radio" name="user_type" value="decaf">
-                    <span class="item-box item-box__one">
-                      <strong class="item__title">decaf</strong>
-                      <span class="item__text">just like regular coffee, except the caffeine has been removed</span>
-                    </span>
-                  </label>
-                  <label class="box-right__list">
-                    <input class="right-list__item visually-hidden" type="radio" name="user_type" value="blended">
-                    <span class="item-box item-box__one">
-                      <strong class="item__title">blended</strong>
-                      <span class="item__text">combination of two or three dark roasted beans of organic coffees</span>
-                    </span>
-                  </label>
-                </div>
+  
+              <div class="box__summary summary">
+                <p class="summary__title">order summary</p>
+                <p class="summary__text">
+                  “I drink my coffee as 
+                  <span class="summary__desc">Filter</span>
+                  , with a 
+                  <span class="summary__desc">Decaf</span>
+                  type of bean. 
+                  <span class="summary__desc">250g</span>
+                  ground ala 
+                  <span class="summary__desc">Cafetiére</span>
+                  , sent to me 
+                  <span class="summary__desc">Every Week</span>
+                  .”
+                </p>
               </div>
-
-              <div class="right-subbox">
-                <div class="box__survey">
-                  <h3 class="box-right__title">how much would you like?</h3>
-                  <button class="button-there" type="button" >
-                    <svg width="19" height="11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.988.784a1.667 1.667 0 0 0-2.35 0l-5.983 5.9-5.9-5.9a1.667 1.667 0 1 0-2.35 2.367l7.066 7.066a1.667 1.667 0 0 0 2.367 0l7.15-7.066a1.667 1.667 0 0 0 0-2.367Z" fill="#333"/></svg>
-                  </button>
-                </div>
-                <div class="survery-content__there">
-                  <label class="box-right__list">
-                    <input class="right-list__item visually-hidden" type="radio" name="user_much" value="250G">
-                    <span class="item-box ">
-                      <strong class="item__title">250G</strong>
-                      <span class="item__text">Perfect for the solo drinker. Yields about 12 delicious cups.</span>
-                    </span>
-                  </label>
-                  <label class="box-right__list">
-                    <input class="right-list__item visually-hidden" type="radio" name="user_much" value="500G">
-                    <span class="item-box item-box__one">
-                      <strong class="item__title">500G</strong>
-                      <span class="item__text">Perfect option for a couple. Yields about 40 delectable cups.</span>
-                    </span>
-                  </label>
-                  <label class="box-right__list">
-                    <input class="right-list__item visually-hidden" type="radio" name="user_much" value="1000G">
-                    <span class="item-box item-box__one">
-                      <strong class="item__title">1000G</strong>
-                      <span class="item__text">Perfect for offices and events. Yields about 90 delightful cups.</span>
-                    </span>
-                  </label>
-                </div>
+  
+              <div class="box-link__box">
+                <button class="box__link" type="submit">create me plan</button>
               </div>
-
-              <div class="right-subbox">
-                <div class="box__survey">
-                  <h3 class="box-right__title">want us to grind them?</h3>
-                  <button class="button-four" type="button" >
-                    <svg width="19" height="11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.988.784a1.667 1.667 0 0 0-2.35 0l-5.983 5.9-5.9-5.9a1.667 1.667 0 1 0-2.35 2.367l7.066 7.066a1.667 1.667 0 0 0 2.367 0l7.15-7.066a1.667 1.667 0 0 0 0-2.367Z" fill="#333"/></svg>
-                  </button>
-                </div>
-                <div class="survery-content__four">
-                  <label class="box-right__list">
-                    <input class="right-list__item visually-hidden" type="radio" name="user_grind" value="wholebean">
-                    <span class="item-box">
-                      <strong class="item__title">wholebean</strong>
-                      <span class="item__text">best choice if you cherish the full sensory experience</span>
-                    </span>
-                  </label>
-                  <label class="box-right__list">
-                    <input class="right-list__item visually-hidden" type="radio" name="user_grind" value="filter">
-                    <span class="item-box item-box__one">
-                      <strong class="item__title">filter</strong>
-                      <span class="item__text">for drip or pour-over coffee methods such as V60 or Aeropress</span>
-                    </span>
-                  </label>
-                  <label class="box-right__list">
-                    <input class="right-list__item visually-hidden" type="radio" name="user_grind" value="cafetiére">
-                    <span class="item-box item-box__one">
-                      <strong class="item__title">cafetiére</strong>
-                      <span class="item__text">course ground beans specially suited for french press coffee</span>
-                    </span>
-                  </label>
-                </div>
-              </div>
-
-              <div class="right-subbox">
-                <div class="box__survey">
-                  <h3 class="box-right__title">how often should we deliver?</h3>
-                  <button class="button-five" type="button" >
-                    <svg width="19" height="11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.988.784a1.667 1.667 0 0 0-2.35 0l-5.983 5.9-5.9-5.9a1.667 1.667 0 1 0-2.35 2.367l7.066 7.066a1.667 1.667 0 0 0 2.367 0l7.15-7.066a1.667 1.667 0 0 0 0-2.367Z" fill="#333"/></svg>
-                  </button>
-                </div>
-                <div class="survery-content__five">
-                  <label class="box-right__list">
-                    <input class="right-list__item visually-hidden" type="radio" name="user_should" value="every week">
-                    <span class="item-box">
-                      <strong class="item__title">every week</strong>
-                      <span class="item__text">$7.20 per shipment. Includes free first-class shipping.</span>
-                    </span>
-                  </label>
-                  <label class="box-right__list">
-                    <input class="right-list__item visually-hidden" type="radio" name="user_should" value="every 2 weeks">
-                    <span class="item-box">
-                      <strong class="item__title">every 2 weeks</strong>
-                      <span class="item__text">$9.60 per shipment. Includes free priority shipping.</span>
-                    </span>
-                  </label>
-                  <label class="box-right__list">
-                    <input class="right-list__item visually-hidden" type="radio" name="user_should" value="every month">
-                    <span class="item-box">
-                      <strong class="item__title">every month</strong>
-                      <span class="item__text">$12.00 per shipment. Includes free priority shipping.</span>
-                    </span>
-                  </label>
-                </div>
-              </div>
-              
             </div>
+            
           </form>
         </div>
       </div>
