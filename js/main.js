@@ -1,4 +1,4 @@
-var elButton = document.querySelector(".box-right__button");
+var elButton = document.querySelector(".box__right-button");
 var elContent = document.querySelector(".survery-content")
 
 elButton.addEventListener("click", function(){
@@ -7,39 +7,39 @@ elButton.addEventListener("click", function(){
 })
 
 
-var elButtontwo = document.querySelector(".button-two");
-var elContenttwo = document.querySelector(".box__content-two")
+var elButtontwo = document.querySelector(".box__two-button");
+var elContenttwo = document.querySelector(".survery-content-two")
 
 elButtontwo.addEventListener("click", function(){
   elButtontwo.classList.toggle("rotate")
-  elContenttwo.classList.toggle("box__content-two--open")
+  elContenttwo.classList.toggle("survery-content-two--open")
 })
 
 
-var elButtonthere = document.querySelector(".button-there");
-var elContentthere = document.querySelector(".box__content-there")
+var elButtonthere = document.querySelector(".box__there-button");
+var elContentthere = document.querySelector(".survery-content-there")
 
 elButtonthere.addEventListener("click", function(){
   elButtonthere.classList.toggle("rotate")
-  elContentthere.classList.toggle("box__content-there--open")
+  elContentthere.classList.toggle("survery-content-there--open")
 })
 
 
-var elButtontfour = document.querySelector(".button-four");
-var elContentfour = document.querySelector(".box__content-four")
+var elButtontfour = document.querySelector(".box__four-button");
+var elContentfour = document.querySelector(".survery-content-four")
 
 elButtontfour.addEventListener("click", function(){
   elButtontfour.classList.toggle("rotate")
-  elContentfour.classList.toggle("box__content-four--open")
+  elContentfour.classList.toggle("survery-content-four--open")
 })
 
 
-var elButtontfive = document.querySelector(".button-five");
-var elContenttfive = document.querySelector(".box__content-five")
+var elButtontfive = document.querySelector(".box__five-button");
+var elContenttfive = document.querySelector(".survery-content-five")
 
 elButtontfive.addEventListener("click", function(){
   elButtontfive.classList.toggle("rotate")
-  elContenttfive.classList.toggle("box__content-five--open")
+  elContenttfive.classList.toggle("survery-content-five--open")
 })
 
 console.log("Hello world!!!")
